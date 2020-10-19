@@ -4,11 +4,11 @@ import 'package:flutter_bloc/model/employee.dart';
 class EmployeeBloC{
 
   List<Employee> _employeeList = [
-    Employee(1, 'Employee 1', 10000.0),
-    Employee(2, 'Employee 2', 20000.0),
-    Employee(3, 'Employee 3', 30000.0),
-    Employee(4, 'Employee 4', 40000.0),
-    Employee(5, 'Employee 5', 50000.0),
+    Employee(1, 'Employee 1', 10000),
+    Employee(2, 'Employee 2', 20000),
+    Employee(3, 'Employee 3', 30000),
+    Employee(4, 'Employee 4', 40000),
+    Employee(5, 'Employee 5', 50000),
   ];
 
   final _employeeListStreamController = StreamController<List<Employee>>();
