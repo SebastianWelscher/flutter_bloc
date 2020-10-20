@@ -28,7 +28,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(widget.title),
+        title: Text(widget.title,
+        style: TextStyle(
+          color: Colors.black87,
+        ),),
       ),
       body: Container(
         child: StreamBuilder(
