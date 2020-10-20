@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Container(
         child: StreamBuilder(
-          stream: _employeeBloC.employeeListStream,
+          stream: _employeeBloC.employeeListStream,   //see in employeeBloC.dart
           builder: (BuildContext context, AsyncSnapshot<List<Employee>> snapshot){
             return ListView.builder(
                 itemCount: snapshot.data.length,

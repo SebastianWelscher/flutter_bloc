@@ -3,6 +3,8 @@ import 'package:flutter_bloc/model/employee.dart';
 
 class EmployeeBloC{
 
+  //List of empolyees
+
   List<Employee> _employeeList = [
     Employee(1, 'Employee 1', 10000),
     Employee(2, 'Employee 2', 20000),
@@ -10,6 +12,8 @@ class EmployeeBloC{
     Employee(4, 'Employee 4', 40000),
     Employee(5, 'Employee 5', 50000),
   ];
+
+  //StreamController
 
   final _employeeListStreamController = StreamController<List<Employee>>();
   final _employeeSalaryIncrementStreamController = StreamController<Employee>();
@@ -45,6 +49,8 @@ class EmployeeBloC{
     _employeeList[employee.id -1].salary = salary - decrementSalary;
     employeeListSink.add(_employeeList);
   }
+
+  //dispose
 
   void dispose(){
     _employeeListStreamController.close();
